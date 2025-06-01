@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asplix - AI Receipt Splitting</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <div class="blurry-blue-circle"></div>
+    <div class="blurry-blue-circle"></div>
+
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <div class="logo-img">
+                        <img src="whitelogo.png" alt="AA Logo" width="24" height="24">
+                    </div>
+                    <div class="logo-text">Asplix</div>
+                </div>
+                <a href="#" class="nav-cta" id="joinWaitlistBtn">Join Waitlist</a>
+            </div>
+        </div>
+    </nav>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span>✨</span>
+                        <span>AI-Powered Receipt Scanner</span>
+                    </div>
+                    <h1><span id="typed-text" style="white-space: pre"></span></h1>
+                    <div id="typed-strings" style="display: none;">
+                        <span>Split diner</span>
+                        <span>Split trip</span>
+                        <span>Split sushi</span>
+                        <span>Split bar</span>
+                        <span>Split cafe</span>
+                    </div>
+                    <p class="hero-subtitle">Scan. Split. Send. The smartest way to handle group expenses without the drama.</p>
+                    <div class="cta-group">
+                        <a href="#" class="cta-primary">
+                            Get Early Access
+                            <span>→</span>
+                        </a>
+                        <a href="#" class="cta-secondary">
+                            <span>▶</span>
+                            Watch Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="phone-showcase">
+                    <div class="phone-container">
+                        <div class="phone">
+                            <div class="phone-screen">
+                                <div class="screen-header">
+                                    <div class="screen-title">Receipt Scanner</div>
+                                    <div style="color: rgba(255,255,255,0.5);">⚡</div>
+                                </div>
+                                <div class="scan-preview">
+                                    <div class="receipt-visual">
+                                        <div class="receipt-header">
+                                            <div class="restaurant-name">Pizza Place</div>
+                                            <div class="receipt-time">2025-05-31 20:30</div>
+                                        </div>
+                                        <div class="receipt-line">
+                                            <span>Pizza</span>
+                                            <span>x1</span>
+                                            <span>$20.00</span>
+                                        </div>
+                                        <div class="receipt-line">
+                                            <span>Salad</span>
+                                            <span>x1</span>
+                                            <span>$12.50</span>
+                                        </div>
+                                        <div class="receipt-line">
+                                            <span>Beer</span>
+                                            <span>x2</span>
+                                            <span>$16.00</span>
+                                        </div>
+                                        <div class="receipt-line total">
+                                            <span>Total</span>
+                                            <span></span>
+                                            <span>$48.50</span>
+                                        </div>
+                                        <div class="transfer-info">
+                                            <div class="payment-info">
+                                                <span class="payer">Elvis</span> paid
+                                            </div>
+                                            <div class="transfer-line">
+                                                <span>Liora</span>
+                                                <span>→</span>
+                                                <span>Elvis</span>
+                                                <span>$24.25</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="scan-animation">
+                                    <div class="scan-frame">
+                                        <div class="corner top-left"></div>
+                                        <div class="corner top-right"></div>
+                                        <div class="corner bottom-left"></div>
+                                        <div class="corner bottom-right"></div>
+                                        <div class="scan-line"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Four simple steps to split any bill perfectly</p>
+            <div class="process-visual">
+                <div class="process-step">
+                    <div class="process-icon">📱</div>
+                    <h4>Scan</h4>
+                    <p>Point and capture</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-icon">🤖</div>
+                    <h4>Process</h4>
+                    <p>AI reads everything</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-icon">👥</div>
+                    <h4>Assign</h4>
+                    <p>Tap to split items</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-icon">💸</div>
+                    <h4>Send</h4>
+                    <p>Instant payment requests</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Built for Modern Life</h2>
+            <p class="section-subtitle">Designed for young professionals, roommates, and travel groups</p>
+            <div class="features-grid">
+                <div class="feature-card glass-strong">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightning Fast</h3>
+                    <p>10-second scans with 95% accuracy</p>
+                </div>
+                <div class="feature-card glass-strong">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Smart Splitting</h3>
+                    <p>AI suggests who ordered what</p>
+                </div>
+                <div class="feature-card glass-strong">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Bank-Level Security</h3>
+                    <p>Your data stays private and encrypted</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="final-cta">
+        <div class="container">
+            <div class="version-container">
+                <h2>Version Comparison</h2>
+                <p class="version-subtitle">Choose the plan that best suits your needs</p>
+                <div class="version-table">
+                    <div class="table-header">
+                        <div class="feature-col">Feature</div>
+                        <div class="version-col">Free Version</div>
+                        <div class="version-col">Pro Version</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-col">AI Smart Scanning</div>
+                        <div class="version-col">10 times Quota</div>
+                        <div class="version-col">unlimited</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-col">Manual Receipt Entry</div>
+                        <div class="version-col">✓</div>
+                        <div class="version-col">✓</div>
+                    </div>
+                    <div class="table-row">
+                        <div class="feature-col">Price</div>
+                        <div class="version-col">Free</div>
+                        <div class="version-col">$1.99 / month</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-blur-bg"></div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="privacy.html" class="footer-link">Privacy Policy</a>
+                    <span class="footer-divider">|</span>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Asplix. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
