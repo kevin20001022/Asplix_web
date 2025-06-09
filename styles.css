@@ -43,6 +43,55 @@ body {
     100% { top: 10%; left: 10%; transform: scale(1); }
 }
 
+/* 移动端特定修复 */
+@media (max-width: 768px) {
+    .blurry-blue-circle {
+        display: none;
+    }
+
+    .cta-primary {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+        width: 240px !important;
+    }
+
+    .screen-title {
+        font-size: 10px;
+        margin-left: 0px;
+    }
+
+    .scan-preview {
+        padding: 12px;
+    }
+
+    .receipt-visual {
+        padding: 12px;
+    }
+
+    .receipt-line {
+        font-size: 10px;
+        gap: 4px;
+        margin-bottom: 8px;
+    }
+
+    .restaurant-name {
+        font-size: 12px;
+    }
+
+    .receipt-time {
+        font-size: 9px;
+    }
+
+    .transfer-line {
+        font-size: 10px;
+        gap: 4px;
+    }
+
+    .screen-header {
+        padding-left: 15px;
+    }
+}
+
 .container {
     max-width: 1400px;
     margin: 0 auto;
