@@ -3,11 +3,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Typed.js initialization
     const typed = new Typed('#typed-text', {
         stringsElement: '#typed-strings',
-        typeSpeed: 50,
-        backSpeed: 30,
-        backDelay: 1000,
+        typeSpeed: 40,
+        backSpeed: 20,
+        backDelay: 1500,
         loop: true,
-        smartBackspace: true
+        smartBackspace: true,
+        cursorChar: '|',
+        fadeOut: false,
+        showCursor: true,
+        autoInsertCss: false,
+        attr: null
     });
 });
 
@@ -59,26 +64,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
-
-// Enhanced phone animation
-const phone = document.querySelector('.phone');
-let mouseX = 0, mouseY = 0;
-let phoneX = 0, phoneY = 0;
-document.addEventListener('mousemove', (e) => {
-    mouseX = (e.clientX / window.innerWidth) - 0.5;
-    mouseY = (e.clientY / window.innerHeight) - 0.5;
-});
-function animatePhone() {
-    phoneX += (mouseX * 10 - phoneX) * 0.1;
-    phoneY += (mouseY * 10 - phoneY) * 0.1;
-
-    if (phone) {
-        phone.style.transform = `translateX(${phoneX}px) translateY(${phoneY}px) rotateX(${mouseY * 5}deg) rotateY(${mouseX * 5}deg)`;
-    }
-
-    requestAnimationFrame(animatePhone);
-}
-animatePhone();
 
 // Join Waitlist Button Logic (Selected/Unselected)
 const joinWaitlistBtn = document.getElementById('joinWaitlistBtn');

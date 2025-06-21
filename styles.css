@@ -18,7 +18,7 @@ body {
     position: absolute;
     width: 400px;
     height: 400px;
-    background: radial-gradient(circle, rgba(66, 133, 244, 0.4), transparent 70%);
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.4), transparent 70%);
     border-radius: 50%;
     filter: blur(100px);
     opacity: 0.6;
@@ -29,7 +29,7 @@ body {
 .blurry-blue-circle:nth-child(2) {
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(66, 133, 244, 0.3), transparent 70%);
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.3), transparent 70%);
     animation: moveCircle 25s infinite alternate-reverse ease-in-out;
     top: 60%;
     left: 70%;
@@ -52,7 +52,7 @@ body {
     .cta-primary {
         padding: 10px 20px;
         font-size: 0.85rem;
-        width: 240px !important;
+        width: auto;
     }
 
     .screen-title {
@@ -89,6 +89,237 @@ body {
 
     .screen-header {
         padding-left: 15px;
+    }
+
+    nav {
+        padding: 15px 0;
+    }
+
+    nav .cta-primary {
+        padding: 8px 16px;
+        font-size: 12px;
+        border-radius: 20px;
+    }
+
+    .logo-text {
+        font-size: 24px;
+    }
+
+    #typed-text {
+        min-width: 200px;
+        font-size: 1.4em;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem !important;
+        margin-bottom: 24px !important;
+    }
+
+    .feature-card {
+        max-width: 260px;
+        margin: 0 auto;
+        padding: 32px 16px;
+    }
+
+    .version-table {
+        font-size: 0.9rem;
+    }
+
+    .table-header,
+    .table-row {
+        padding: 20px;
+        gap: 20px;
+        font-size: 1rem;
+    }
+
+    .feature-col {
+        font-size: 0.85rem;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .version-col {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    /* 手机版显示phone.jpg区域 */
+    .mobile-phone-display {
+        display: block;
+        position: relative;
+        min-height: calc(100vh - 250px); /* 减少高度，为footer留空间 */
+        background: url('phone.jpg') center center no-repeat;
+        background-size: contain; /* 改回contain确保图片完整显示 */
+        margin: 0 0 20px 0; /* 添加底部间距 */
+        padding: 0; /* 移除左右内边距 */
+        width: 100%; /* 确保宽度100% */
+    }
+
+    /* 手机版隐藏Terms of Service */
+    .footer-links a[href="#"]:last-child {
+        display: none;
+    }
+
+    .footer-divider:last-child {
+        display: none;
+    }
+
+    /* 手机版底部链接样式 */
+    .mobile-bottom-links {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(20px);
+        padding: 20px;
+        z-index: 10;
+        display: flex;
+        flex-direction: row; /* 改为水平排列 */
+        gap: 15px; /* 减小间距 */
+        align-items: center;
+        justify-content: center; /* 居中对齐 */
+    }
+
+    .mobile-download-btn {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        font-size: 12px; /* 减小字体 */
+        font-weight: 500;
+        transition: all 0.3s ease;
+        padding: 6px 10px; /* 减小内边距 */
+        border-radius: 6px; /* 减小圆角 */
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .mobile-download-btn:hover {
+        color: rgba(255, 255, 255, 0.9);
+        background: rgba(15, 23, 42, 0.2);
+        border-color: rgba(255, 255, 255, 0.1);
+        transform: translateY(-1px);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    .mobile-privacy-link {
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        font-size: 12px; /* 减小字体 */
+        font-weight: 500;
+        transition: all 0.3s ease;
+        padding: 6px 10px; /* 减小内边距 */
+        border-radius: 6px; /* 减小圆角 */
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .mobile-privacy-link:hover {
+        color: rgba(255, 255, 255, 0.9);
+        background: rgba(15, 23, 42, 0.2);
+        border-color: rgba(255, 255, 255, 0.1);
+        transform: translateY(-1px);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+
+    /* 添加分隔线 */
+    .mobile-bottom-links::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 1px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.3);
+    }
+
+    .footer-links {
+        flex-direction: row !important;
+        gap: 15px;
+        flex-wrap: nowrap !important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer {
+        padding: 24px 0 16px;
+    }
+    .footer-content {
+        gap: 12px;
+    }
+
+    /* 1. 讓主要內容顯示 */
+    .hero,
+    .process,
+    .features,
+    .final-cta {
+        display: block;
+    }
+    /* 2. How It Works 單欄排列 */
+    .process-visual {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 40px;
+        align-items: stretch;
+    }
+    .process-step::after {
+        content: '↓';
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 24px;
+        color: rgba(59, 130, 246, 0.3);
+        display: block;
+    }
+    .process-step:last-child::after {
+        display: none;
+    }
+    /* 3. features 區塊單欄 */
+    .features-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+    .feature-card {
+        max-width: 100%;
+        margin: 0 0 0 0;
+        padding: 24px 10px;
+    }
+    /* 4. 版本比較表單欄 */
+    .version-table {
+        display: block;
+    }
+    .table-header, .table-row {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px 8px;
+        font-size: 0.95rem;
+        align-items: flex-start;
+    }
+    .feature-col, .version-col {
+        text-align: left;
+        width: 100%;
+    }
+    /* 5. 保留 phone.jpg 區塊在最上方 */
+    .mobile-phone-display {
+        display: block;
+        position: relative;
+        min-height: 180px;
+        background: url('phone.jpg') center center no-repeat;
+        background-size: contain;
+        margin: 0 0 16px 0;
+        padding: 0;
+        width: 100%;
+    }
+    /* 6. footer 高度縮小 */
+    .footer {
+        padding: 24px 0 16px;
+    }
+    .footer-content {
+        gap: 12px;
     }
 }
 
@@ -147,8 +378,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.3);
 }
 
 .logo-img img {
@@ -185,6 +414,22 @@ nav {
     box-shadow: 0 8px 25px rgba(15, 23, 42, 0.4);
 }
 
+nav .cta-primary {
+    padding: 8px 12px;
+    font-size: 11px;
+    width: auto;
+    min-width: auto;
+    background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+nav .cta-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
+    background: linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%);
+}
+
 /* Hero Section */
 .hero {
     padding: 140px 0 100px;
@@ -197,13 +442,16 @@ nav {
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1.2fr 0.8fr;
-    gap: 80px;
+    grid-template-columns: 1fr;
+    gap: 40px;
     align-items: center;
+    text-align: center;
 }
 
 .hero-content {
     z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .hero-badge {
@@ -216,34 +464,62 @@ nav {
     border-radius: 50px;
     font-size: 14px;
     font-weight: 500;
-    margin-bottom: 24px;
+    margin: 0 auto 24px;
     backdrop-filter: blur(20px);
 }
 
 .hero-content h1 {
-    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-size: clamp(2rem, 4.5vw, 3rem);
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 24px;
     letter-spacing: -0.02em;
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.2em;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 0.1em;
 }
 
-.hero-content h1 span:not(#typed-text) {
+.title-prefix {
     background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-#typed-text {
-    color: #ffffff;
-    -webkit-text-fill-color: #ffffff;
-    position: relative;
+.title-prefix, #typed-text {
     display: inline-block;
+}
+
+.title-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 1.2em;
+    line-height: 1.2em;
+    position: relative;
+    overflow: visible;
+}
+
+#typed-text {
+    color: #3B82F6;
+    -webkit-text-fill-color: #3B82F6;
+    position: relative;
+    min-width: 20000px;
+    text-align: center;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: visible;
+}
+
+.title-suffix {
+    background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: inline-block;
+    text-align: center;
 }
 
 .typed-cursor {
@@ -254,6 +530,11 @@ nav {
     position: relative;
     margin-left: 2px;
     vertical-align: middle;
+    white-space: nowrap;
+    overflow: visible;
+    font-weight: 800;
+    font-size: inherit;
+    z-index: 10;
 }
 
 .typed-cursor.typed-cursor--blink {
@@ -321,7 +602,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 500px;
 }
 
 .phone-container {
@@ -330,11 +611,11 @@ nav {
 }
 
 .phone {
-    width: 360px;
-    height: 720px;
+    width: 300px;
+    height: 600px;
     background: linear-gradient(145deg, #0F172A, #1e293b);
-    border-radius: 45px;
-    padding: 25px;
+    border-radius: 40px;
+    padding: 20px;
     box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6);
     position: relative;
     overflow: hidden;
@@ -407,7 +688,7 @@ nav {
 }
 
 .payer {
-    color: #60A5FA;
+    color: #3B82F6;
     font-style: italic;
     font-weight: 500;
 }
@@ -604,7 +885,7 @@ nav {
 .custom-file-upload, .process-text-button {
     display: inline-block;
     padding: 15px 30px;
-    background: linear-gradient(135deg, #4285F4 0%, #34A853 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #34A853 100%);
     color: #ffffff;
     font-weight: 600;
     border-radius: 30px;
@@ -694,6 +975,13 @@ nav {
     font-size: 2.5rem;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 15px 40px rgba(15, 23, 42, 0.4);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+}
+
+.process-icon:hover {
+    box-shadow: 0 20px 50px rgba(59, 130, 246, 0.3), 0 0 30px rgba(59, 130, 246, 0.5);
+    border-color: rgba(59, 130, 246, 0.5);
 }
 
 .process-step h4 {
@@ -895,8 +1183,8 @@ nav {
     }
 
     .phone {
-        width: 300px;
-        height: 600px;
+        width: 280px;
+        height: 560px;
     }
 }
 
@@ -913,11 +1201,6 @@ nav {
 
     .hero-content {
         order: 1;
-    }
-
-    .phone-showcase {
-        order: 2;
-        height: 500px;
     }
 
     .cta-group {
@@ -957,19 +1240,19 @@ nav {
     }
 
     .hero-content h1 {
-        font-size: clamp(1.5rem, 6vw, 2rem);
-        justify-content: center;
-        text-align: center;
+        font-size: clamp(2.5rem, 6vw, 4rem);
+        flex-direction: column;
     }
 
     .hero-subtitle {
-        font-size: 1.0rem;
+        font-size: 0.95rem !important;
+        margin-bottom: 24px !important;
     }
 
     .phone {
-        width: 320px;
-        height: 640px;
-        padding: 20px;
+        width: 280px;
+        height: 560px;
+        padding: 15px;
     }
 
     .phone-screen {
@@ -1014,7 +1297,9 @@ nav {
     }
 
     .feature-card {
-        padding: 40px 30px;
+        max-width: 260px;
+        margin: 0 auto;
+        padding: 32px 16px;
     }
 
     .cta-container {
@@ -1026,9 +1311,15 @@ nav {
     }
 
     #typed-text {
-        font-size: 1.2em;
-        text-align: center;
-        width: 100%;
+        min-width: 200px;
+        font-size: 1.3em;
+    }
+
+    .typed-cursor {
+        color: #ffffff !important;
+        opacity: 1 !important;
+        z-index: 10;
+        display: none !important;
     }
 
     .hero-content h1 span:not(#typed-text) {
@@ -1063,6 +1354,27 @@ nav {
         gap: 20px;
         font-size: 1rem;
     }
+
+    /* 手机版显示phone.jpg区域 */
+    .mobile-phone-display {
+        display: block;
+        position: relative;
+        min-height: 100vh; /* 恢复为100vh满版显示 */
+        background: url('phone.jpg') center center no-repeat;
+        background-size: contain; /* 改回contain确保图片完整显示 */
+        margin: 0; /* 移除所有margin */
+        padding: 0; /* 移除左右内边距 */
+        width: 100%; /* 确保宽度100% */
+    }
+
+    /* 手机版隐藏Terms of Service */
+    .footer-links a[href="#"]:last-child {
+        display: none;
+    }
+
+    .footer-divider {
+        display: none;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1077,7 +1389,8 @@ nav {
     }
 
     .hero-content h1 {
-        font-size: clamp(2rem, 6vw, 1rem);
+        font-size: clamp(2.3rem, 5.5vw, 3.8rem);
+        flex-direction: column;
     }
 
     .hero-subtitle {
@@ -1096,8 +1409,8 @@ nav {
     }
 
     .phone {
-        width: 260px;
-        height: 520px;
+        width: 240px;
+        height: 480px;
         padding: 12px;
     }
 
@@ -1154,7 +1467,8 @@ nav {
     }
 
     #typed-text {
-        font-size: 1.3em;
+        min-width: 200px;
+        font-size: 1.4em;
     }
 
     .hero-content h1 span:not(#typed-text) {
@@ -1163,13 +1477,16 @@ nav {
 
     .table-header,
     .table-row {
-        padding: 15px;
-        gap: 15px;
-        font-size: 0.9rem;
+        padding: 12px 10px;
+        gap: 10px;
+        font-size: 0.85rem;
+        align-items: center;
     }
 
     .feature-col {
-        font-size: 12px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        text-align: left;
     }
 
     .version-container {
@@ -1183,21 +1500,44 @@ nav {
 
     .table-header,
     .table-row {
-        padding: 15px;
-        gap: 15px;
-        font-size: 0.9rem;
+        padding: 12px 10px;
+        gap: 10px;
+        font-size: 0.85rem;
+        align-items: center;
+    }
+
+    .feature-col {
+        font-size: 0.85rem;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .version-col {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    nav .cta-primary {
+        padding: 8px 16px;
+        font-size: 12px;
     }
 }
 
 /* 针对超小屏幕的额外优化 */
 @media (max-width: 375px) {
     .hero-content h1 {
-        font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+        font-size: clamp(2rem, 4.5vw, 3rem);
+        flex-direction: column;
+    }
+
+    #typed-text {
+        min-width: 180px;
+        font-size: 1.2em;
     }
 
     .phone {
-        width: 240px;
-        height: 480px;
+        width: 220px;
+        height: 440px;
     }
 
     .feature-card {
@@ -1216,12 +1556,12 @@ nav {
     }
 
     .phone-showcase {
-        height: 400px;
+        height: 350px;
     }
 
     .phone {
-        width: 220px;
-        height: 440px;
+        width: 200px;
+        height: 400px;
     }
 }
 
@@ -1323,7 +1663,7 @@ nav {
 }
 
 .version-col:last-child {
-    color: #60A5FA;
+    color: #3B82F6;
     font-weight: 500;
 }
 
@@ -1413,7 +1753,7 @@ nav {
     content: "•";
     position: absolute;
     left: 0;
-    color: #60A5FA;
+    color: #3B82F6;
     font-size: 1.2rem;
 }
 
