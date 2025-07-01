@@ -1019,50 +1019,7 @@ nav .cta-primary:hover {
 }
 
 /* Final CTA */
-.final-cta {
-    padding: 120px 0;
-    text-align: center;
-    position: relative;
-}
-
-.cta-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 80px 60px;
-    border-radius: 40px;
-    position: relative;
-    overflow: hidden;
-}
-
-.cta-container::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.3) 0%, rgba(30, 41, 59, 0.2) 100%);
-    z-index: -1;
-}
-
-.final-cta h2 {
-    font-size: 3.5rem;
-    font-weight: 800;
-    margin-bottom: 24px;
-    background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.8) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    letter-spacing: -0.02em;
-}
-
-.final-cta p {
-    font-size: 1.3rem;
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 40px;
-    line-height: 1.5;
-    margin-top: 20px;
-}
+.final-cta { display: none; }
 
 /* Footer */
 .footer {
